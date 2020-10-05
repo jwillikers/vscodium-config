@@ -3,5 +3,5 @@
     "editor.formatOnSave": true,
     "workbench.colorTheme": "Solarized Dark",
     "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 0
+    "files.autoSaveDelay": 1
 }
