@@ -1,5 +1,7 @@
 {
     "git.autofetch": true,
     "editor.formatOnSave": true,
-    "workbench.colorTheme": "Solarized Dark"
+    "workbench.colorTheme": "Solarized Dark",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 0
 }
