@@ -1,0 +1,5 @@
+{
+    "git.autofetch": true,
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "Solarized Dark"
+}
