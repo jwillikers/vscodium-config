@@ -27,7 +27,7 @@ Install these settings with the following instructions.
 +
 [source,sh]
 ----
-➜ git clone -C ~/Projects git@github.com:jwillikers/vscodium-settings.git
+➜ git -C ~/Projects clone git@github.com:jwillikers/vscodium-settings.git
 ----
 
 . Copy the `settings.json` file to the appropriate location.
@@ -57,14 +57,14 @@ _Flatpak_::
 +
 [source,sh]
 ----
-➜ xargs -a ~/Projects/vscodium-settings/extensions.txt -I{} flatpak run com.vscodium.codium --install-extension {}
+➜ xargs -ra ~/Projects/vscodium-settings/extensions.txt -I{} flatpak run com.vscodium.codium --install-extension {}
 ----
 
 _System Package_::
 +
 [source,sh]
 ----
-➜ xargs -a ~/Projects/vscodium-settings/extensions.txt -I{} codium --install-extension {}
+➜ xargs -ra ~/Projects/vscodium-settings/extensions.txt -I{} codium --install-extension {}
 ----
 --
 
@@ -76,7 +76,7 @@ To update the settings in this repository from an existing installation, follow 
 +
 [source,sh]
 ----
-➜ git clone -C ~/Projects git@github.com:jwillikers/vscodium-settings.git
+➜ git -C ~/Projects clone git@github.com:jwillikers/vscodium-settings.git
 ----
 
 . Copy the `settings.json` file from the appropriate location to the Git repository.
