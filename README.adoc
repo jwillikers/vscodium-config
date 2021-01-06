@@ -1,0 +1,141 @@
+= VSCodium Settings
+Jordan Williams <jordan@jwillikers.com>
+:experimental:
+:icons: font
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+:vscodium: https://vscodium.com/[VSCodium]
+
+My settings for the {vscodium} application.
+
+== Usage
+
+These settings contain the settings file and the a list of extensions.
+These settings are syncronized using this Git repository.
+The following instructions detail how to use and sync this repository.
+
+=== Install
+
+Install these settings with the following instructions.
+
+. Clone this repository.
++
+[source,sh]
+----
+➜ git clone -C ~/Projects git@github.com:jwillikers/vscodium-settings.git
+----
+
+. Copy the `settings.json` file to the appropriate location.
++
+--
+_Flatpak_::
++
+[source,sh]
+----
+➜ cp ~/Projects/vscodium-settings/settings.json \
+  ~/.var/app/com.vscodium.codium/config/VSCodium/User/
+----
+
+_System Package_::
++
+[source,sh]
+----
+➜ cp ~/Projects/vscodium-settings/settings.json \
+  ~/.config/VSCodium/User/
+----
+--
+
+. Install each extension listed in the `extensions.txt` file.
++
+--
+_Flatpak_::
++
+[source,sh]
+----
+➜ xargs -a ~/Projects/vscodium-settings/extensions.txt -I{} flatpak run com.vscodium.codium --install-extension {}
+----
+
+_System Package_::
++
+[source,sh]
+----
+➜ xargs -a ~/Projects/vscodium-settings/extensions.txt -I{} codium --install-extension {}
+----
+--
+
+=== Update
+
+To update the settings in this repository from an existing installation, follow these steps.
+
+. If you haven't already done so, clone this repository.
++
+[source,sh]
+----
+➜ git clone -C ~/Projects git@github.com:jwillikers/vscodium-settings.git
+----
+
+. Copy the `settings.json` file from the appropriate location to the Git repository.
++
+--
+_Flatpak_::
++
+[source,sh]
+----
+➜ cp ~/.var/app/com.vscodium.codium/config/VSCodium/User/settings.json \
+  ~/Projects/vscodium-settings/
+----
+
+_System Package_::
++
+[source,sh]
+----
+➜ cp ~/.config/VSCodium/User/settings.json \
+  ~/Projects/vscodium-settings/
+----
+--
+
+// todo Add instructions for using a merge tool to merge disparate settings files.
+
+. Add any currently installed extensions to the `extensions.txt` file.
++
+--
+_Flatpak_::
++
+[source,sh]
+----
+➜ flatpak run com.vscodium.codium --list-extensions \
+    >> ~/Projects/vscodium-settings/extensions.txt; \
+  and sort -u -o ~/Projects/vscodium-settings/extensions.txt \
+    ~/Projects/vscodium-settings/extensions.txt
+----
+
+_System Package_::
++
+[source,sh]
+----
+➜ codium --list-extensions >> ~/Projects/vscodium-settings/extensions.txt; \
+  and sort -u -o ~/Projects/vscodium-settings/extensions.txt \
+    ~/Projects/vscodium-settings/extensions.txt
+----
+--
+
+== Code of Conduct
+
+The project's Code of Conduct is available in the link:CODE_OF_CONDUCT.adoc[] file.
+
+== License
+
+This repository is licensed under the https://www.gnu.org/licenses/gpl-3.0.html[GPLv3], available in the link:LICENSE.adoc[] file.
+
+== Copyright
+
+© 2020 Jordan Williams
+
+== Authors
+
+mailto:{email}[{author}]

@@ -1,0 +1,3 @@
+asciidoctor.asciidoctor-vscode
+rust-lang.rust
+vscodevim.vim
