@@ -33,6 +33,8 @@ Install these settings with the following instructions.
 . Copy the `settings.json` file to the appropriate location.
 +
 --
+NOTE: Close VSCodium before copying the settings file.
+
 _Flatpak_::
 +
 [source,sh]
