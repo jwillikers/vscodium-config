@@ -1,3 +1,4 @@
 asciidoctor.asciidoctor-vscode
+electricduck.elementary-theme
 rust-lang.rust
 vscodevim.vim

@@ -1,6 +1,7 @@
 {
     "files.autoSave": "onFocusChange",
-    "workbench.colorTheme": "Solarized Dark",
+    "workbench.colorTheme": "elementary Darker",
     "workbench.preferredDarkColorTheme": "Solarized Dark",
-    "window.autoDetectColorScheme": true
+    "window.autoDetectColorScheme": true,
+    "git.autofetch": true
 }
