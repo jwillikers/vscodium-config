@@ -3,5 +3,8 @@
     "workbench.colorTheme": "Solarized Dark",
     "workbench.preferredDarkColorTheme": "Solarized Dark",
     "git.autofetch": true,
-    "workbench.preferredLightColorTheme": "Solarized Light"
+    "workbench.preferredLightColorTheme": "Solarized Light",
+    "terminal.external.linuxExec": "io.elementary.terminal",
+    "terminal.integrated.shell.linux": "/usr/bin/env",
+    "terminal.integrated.shellArgs.linux": ["--", "flatpak-spawn", "--host", "fish"]
 }
