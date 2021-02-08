@@ -11,5 +11,6 @@
         "flatpak-spawn",
         "--host",
         "fish"
-    ]
+    ],
+    "editor.formatOnSave": true
 }
