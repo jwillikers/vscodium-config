@@ -6,5 +6,10 @@
     "workbench.preferredLightColorTheme": "Solarized Light",
     "terminal.external.linuxExec": "io.elementary.terminal",
     "terminal.integrated.shell.linux": "/usr/bin/env",
-    "terminal.integrated.shellArgs.linux": ["--", "flatpak-spawn", "--host", "fish"]
+    "terminal.integrated.shellArgs.linux": [
+        "--",
+        "flatpak-spawn",
+        "--host",
+        "fish"
+    ]
 }
