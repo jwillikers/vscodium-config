@@ -1,4 +1,5 @@
 asciidoctor.asciidoctor-vscode
 electricduck.elementary-theme
 rust-lang.rust
+streetsidesoftware.code-spell-checker
 vscodevim.vim
