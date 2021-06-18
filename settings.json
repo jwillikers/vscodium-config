@@ -4,13 +4,14 @@
     "workbench.preferredDarkColorTheme": "Solarized Dark",
     "git.autofetch": true,
     "workbench.preferredLightColorTheme": "Solarized Light",
-    "terminal.external.linuxExec": "io.elementary.terminal",
     "terminal.integrated.shell.linux": "/usr/bin/env",
     "terminal.integrated.shellArgs.linux": [
         "--",
         "flatpak-spawn",
         "--host",
-        "fish"
+        "toolbox",
+        "enter",
+        "main-toolbox"
     ],
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
 }
