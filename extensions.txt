@@ -1,4 +1,5 @@
 asciidoctor.asciidoctor-vscode
+bmalehorn.vscode-fish
 electricduck.elementary-theme
 llvm-vs-code-extensions.vscode-clangd
 ms-python.python
