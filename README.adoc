@@ -70,6 +70,33 @@ _System Package_::
 ----
 --
 
+_Flatpak_:: There is some additional Flatpak-specific setup.
++
+.. Set a standard, shared `tmp` directory for VSCodium to function as expected.
++
+[source,sh]
+----
+➜ flatpak override --user --env=TMPDIR=/var/tmp com.vscodium.codium
+----
+
+.. Ensure the `functions` configuration directory for the fish shell exists.
++
+[source,sh]
+----
+➜ mkdir -p ~/.config/fish/functions/
+----
+
+.. Install an alias for the fish shell which also appropriately handles running via Flatpak and from inside a https://github.com/containers/toolbox[toolbox].
++
+--
+[source,sh]
+----
+➜ cp ~/Projects/vscodium-settings/codium.fish ~/.config/fish/functions/
+----
+
+Thank you https://www.carmenbianca.eu[Carmen Bianca Bakker] for the blog post https://www.carmenbianca.eu/en/post/2021-02-05-silverblue-development/[Using Fedora Silverblue for development], the source of the original https://www.gnu.org/software/bash/[Bash] script for accomplishing this. 
+--
+
 === Update
 
 To update the settings in this repository from an existing installation, follow these steps.
@@ -125,6 +152,15 @@ _System Package_::
     ~/Projects/vscodium-settings/extensions.txt
 ----
 --
+
+__Flatpak_:: The Flatpak requires additional steps.
++
+.. Install an alias for the fish shell which also appropriately handles running via Flatpak and from inside a toolbox.
++
+[source,sh]
+----
+➜ cp ~/.config/fish/functions/codium.fish ~/Projects/vscodium-settings/
+----
 
 == Code of Conduct
 
