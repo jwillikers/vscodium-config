@@ -1,5 +1,6 @@
 asciidoctor.asciidoctor-vscode
 electricduck.elementary-theme
+llvm-vs-code-extensions.vscode-clangd
 ms-python.python
 redhat.vscode-yaml
 rust-lang.rust
