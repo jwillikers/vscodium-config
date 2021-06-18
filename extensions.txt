@@ -1,6 +1,7 @@
 asciidoctor.asciidoctor-vscode
 electricduck.elementary-theme
 ms-python.python
+redhat.vscode-yaml
 rust-lang.rust
 streetsidesoftware.code-spell-checker
 vscodevim.vim
