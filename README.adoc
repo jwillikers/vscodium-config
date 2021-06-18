@@ -9,14 +9,14 @@ ifdef::env-github[]
 :caution-caption: :fire:
 :warning-caption: :warning:
 endif::[]
-:vscodium: https://vscodium.com/[VSCodium]
+:VSCodium: https://vscodium.com/[VSCodium]
 
-My settings for the {vscodium} application.
+My settings for the {VSCodium} application.
 
 == Usage
 
 These settings contain the settings file and the a list of extensions.
-These settings are syncronized using this Git repository.
+These settings are synchronized using this Git repository.
 The following instructions detail how to use and sync this repository.
 
 === Install
@@ -136,7 +136,7 @@ This repository is licensed under the https://www.gnu.org/licenses/gpl-3.0.html[
 
 == Copyright
 
-© 2020 Jordan Williams
+© 2020-2021 Jordan Williams
 
 == Authors
 
