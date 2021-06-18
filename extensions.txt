@@ -2,7 +2,9 @@ asciidoctor.asciidoctor-vscode
 electricduck.elementary-theme
 llvm-vs-code-extensions.vscode-clangd
 ms-python.python
+ms-vscode.cmake-tools
 redhat.vscode-yaml
 rust-lang.rust
 streetsidesoftware.code-spell-checker
+twxs.cmake
 vscodevim.vim
