@@ -5,12 +5,7 @@ function codium --wraps='flatpak run com.vscodium.codium' --description 'alias t
         exec /usr/bin/codium $argv
     else if test -f /usr/bin/flatpak-spawn
         exec /usr/bin/flatpak-spawn --host flatpak run com.vscodium.codium $argv
-    else if test -f /usr/bin/flatpak
-        exec /usr/bin/flatpak run com.vscodium.codium $argv
     else
-        if set -l index (contains -i -- --wait $argv)
-            set -e argv[$index]
-        end
-        exec vi $argv
+        exec /usr/bin/flatpak run com.vscodium.codium $argv
     end
 end
